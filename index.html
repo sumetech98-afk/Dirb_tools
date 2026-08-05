@@ -1,0 +1,987 @@
+<!-- ===== DIRB WEB CONTENT SCANNER - CYBERSUME FULL SCREEN BLACK EDITION ===== -->
+<!-- Isko Blogger Post Editor mein HTML mode mein paste karein -->
+
+<style>
+    /* ===== FULL SCREEN WRAPPER ===== */
+    .cyber-post-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 40px 50px !important;
+        background: #000000 !important;
+        color: #ffffff;
+        border-radius: 0 !important;
+        box-sizing: border-box;
+    }
+    
+    /* ===== RESPONSIVE FULL SCREEN MARGINS ===== */
+    @media (max-width: 1200px) {
+        .cyber-post-wrapper {
+            padding: 25px 35px 45px !important;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .cyber-post-wrapper {
+            padding: 22px 30px 40px !important;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper {
+            padding: 18px 22px 35px !important;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .cyber-post-wrapper {
+            padding: 15px 18px 30px !important;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper {
+            padding: 12px 14px 25px !important;
+        }
+    }
+    
+    /* ===== CONTENT MAX WIDTH ===== */
+    .cyber-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    /* ===== POST HEADER ===== */
+    .post-header-cyber {
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgba(0, 255, 136, 0.08);
+        background: transparent;
+        text-align: center;
+    }
+    
+    .post-badge {
+        display: inline-block;
+        padding: 6px 26px;
+        background: rgba(0, 255, 136, 0.08);
+        border: 1px solid #00ff88;
+        border-radius: 50px;
+        color: #00ff88;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .post-title-cyber {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 1.15;
+        color: #ffffff !important;
+        margin: 12px 0 18px;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+    
+    .post-title-cyber strong {
+        color: #00ff88;
+    }
+    
+    @media (max-width: 992px) {
+        .post-title-cyber {
+            font-size: 32px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .post-title-cyber {
+            font-size: 26px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .post-title-cyber {
+            font-size: 22px;
+        }
+    }
+    
+    /* ===== FEATURED BOX ===== */
+    .featured-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 35px;
+        background: #0a0a0a !important;
+        border: 1px solid rgba(0, 255, 136, 0.12);
+        border-radius: 18px;
+        padding: 32px 38px;
+        margin: 25px 0 38px;
+        justify-content: center;
+    }
+    
+    @media (max-width: 768px) {
+        .featured-box {
+            flex-direction: column;
+            text-align: center;
+            padding: 25px 22px;
+            gap: 22px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .featured-box {
+            padding: 20px 16px;
+        }
+    }
+    
+    .featured-image {
+        flex-shrink: 0;
+    }
+    
+    .featured-image img {
+        max-width: 220px;
+        height: auto;
+        border-radius: 14px;
+        border: 2px solid #00ff88;
+        transition: 0.3s;
+        background: #000000;
+    }
+    
+    @media (max-width: 768px) {
+        .featured-image img {
+            max-width: 180px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .featured-image img {
+            max-width: 150px;
+        }
+    }
+    
+    .featured-image img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 40px rgba(0, 255, 136, 0.15);
+    }
+    
+    .featured-cta {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .featured-cta p {
+        color: #b0b8c8 !important;
+        margin: 5px 0 12px !important;
+        font-size: 16px;
+    }
+    
+    .featured-cta .main-link {
+        display: inline-block;
+        padding: 15px 42px;
+        background: linear-gradient(135deg, #00ff88, #00cc77);
+        color: #000000 !important;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none;
+        margin-top: 6px;
+        transition: all 0.3s ease;
+        letter-spacing: 0.5px;
+    }
+    
+    .featured-cta .main-link:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 35px rgba(0, 255, 136, 0.25);
+    }
+    
+    .featured-cta .small-note {
+        color: #6a7290 !important;
+        font-size: 13px;
+        margin-top: 12px !important;
+    }
+    
+    .price-tag {
+        display: inline-block;
+        padding: 4px 18px;
+        background: rgba(255, 204, 0, 0.1);
+        border: 1px solid #ffcc00;
+        border-radius: 50px;
+        color: #ffcc00;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 8px;
+    }
+    
+    /* ===== HEADINGS ===== */
+    .cyber-post-wrapper h2 {
+        color: #ffffff !important;
+        font-size: 28px;
+        font-weight: 800;
+        margin-top: 40px;
+        margin-bottom: 18px;
+        border-left: 5px solid #00ff88;
+        padding-left: 20px;
+        line-height: 1.3;
+    }
+    
+    .cyber-post-wrapper h2#how {
+        border-left-color: #00d9ff;
+    }
+    
+    .cyber-post-wrapper h2#features {
+        border-left-color: #ffcc00;
+    }
+    
+    .cyber-post-wrapper h2#example {
+        border-left-color: #00ff88;
+    }
+    
+    .cyber-post-wrapper h2#conclusion {
+        border-left-color: #00d9ff;
+    }
+    
+    @media (max-width: 992px) {
+        .cyber-post-wrapper h2 {
+            font-size: 26px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper h2 {
+            font-size: 24px;
+            padding-left: 16px;
+            margin-top: 35px;
+            margin-bottom: 16px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper h2 {
+            font-size: 20px;
+            padding-left: 14px;
+            margin-top: 28px;
+            margin-bottom: 14px;
+        }
+    }
+    
+    .cyber-post-wrapper h3 {
+        color: #00ff88 !important;
+        font-size: 22px;
+        font-weight: 700;
+        margin: 30px 0 14px;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper h3 {
+            font-size: 19px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper h3 {
+            font-size: 17px;
+            margin-top: 24px;
+        }
+    }
+    
+    /* ===== PARAGRAPHS ===== */
+    .cyber-post-wrapper p {
+        color: #b0b8c8 !important;
+        font-size: 17px;
+        line-height: 1.95;
+        margin: 16px 0 20px;
+    }
+    
+    .cyber-post-wrapper p strong {
+        color: #00ff88;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper p {
+            font-size: 16px;
+            line-height: 1.85;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 14px 0 16px;
+        }
+    }
+    
+    /* ===== CODE BLOCKS ===== */
+    .code-block {
+        margin: 16px 0 24px;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #0a0a0a !important;
+        border: 1px solid rgba(0, 255, 136, 0.08);
+    }
+    
+    .code-header {
+        background: #0d0d0d !important;
+        padding: 12px 20px;
+        border-bottom: 1px solid rgba(0, 255, 136, 0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .code-header span:first-child {
+        color: #00ff88 !important;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .code-header span:last-child {
+        color: #6a7290 !important;
+        font-size: 12px;
+    }
+    
+    .code-block pre {
+        background: #000000 !important;
+        padding: 22px 24px;
+        border-radius: 0;
+        overflow-x: auto;
+        margin: 0;
+        border: none;
+    }
+    
+    .code-block pre code {
+        color: #b0b8c8 !important;
+        font-family: 'Courier New', 'Consolas', monospace;
+        font-size: 15px;
+        line-height: 1.9;
+        background: transparent !important;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    
+    .code-block pre code .cmd {
+        color: #00ff88;
+    }
+    .code-block pre code .flag {
+        color: #ffcc00;
+    }
+    .code-block pre code .target {
+        color: #00d9ff;
+    }
+    .code-block pre code .comment {
+        color: #6a7290;
+        font-style: italic;
+    }
+    .code-block pre code .output {
+        color: #00d9ff;
+    }
+    
+    @media (max-width: 480px) {
+        .code-block pre {
+            padding: 16px 14px;
+        }
+        .code-block pre code {
+            font-size: 13px;
+            line-height: 1.8;
+        }
+        .code-header {
+            padding: 10px 14px;
+        }
+        .code-header span:first-child {
+            font-size: 12px;
+        }
+        .code-header span:last-child {
+            font-size: 11px;
+        }
+    }
+    
+    /* ===== LISTS ===== */
+    .cyber-post-wrapper ul,
+    .cyber-post-wrapper ol {
+        color: #b0b8c8 !important;
+        font-size: 17px;
+        line-height: 2.3;
+        padding-left: 0;
+        margin: 14px 0 22px;
+        list-style: none;
+    }
+    
+    .cyber-post-wrapper ul li,
+    .cyber-post-wrapper ol li {
+        color: #b0b8c8 !important;
+        margin-bottom: 4px;
+        padding-left: 28px;
+        position: relative;
+    }
+    
+    .cyber-post-wrapper ul li::before {
+        content: "▸";
+        color: #00ff88;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper ul,
+        .cyber-post-wrapper ol {
+            font-size: 15px;
+            line-height: 2.1;
+        }
+        .cyber-post-wrapper ul li {
+            padding-left: 24px;
+        }
+    }
+    
+    /* ===== TABLE ===== */
+    .cyber-post-wrapper table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #0a0a0a !important;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        margin: 18px 0 25px;
+    }
+    
+    .cyber-post-wrapper table thead tr {
+        background: #00ff88 !important;
+    }
+    
+    .cyber-post-wrapper table thead tr th {
+        padding: 14px 20px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 15px;
+        color: #000000 !important;
+    }
+    
+    .cyber-post-wrapper table tbody tr {
+        border-bottom: 1px solid rgba(0, 255, 136, 0.04);
+    }
+    
+    .cyber-post-wrapper table tbody tr:last-child {
+        border-bottom: none;
+    }
+    
+    .cyber-post-wrapper table tbody tr td {
+        padding: 12px 20px;
+        color: #b0b8c8 !important;
+        font-size: 15px;
+    }
+    
+    .cyber-post-wrapper table tbody tr td:first-child {
+        color: #00ff88 !important;
+        font-family: 'Courier New', monospace;
+        font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper table thead tr th {
+            padding: 10px 14px;
+            font-size: 13px;
+        }
+        .cyber-post-wrapper table tbody tr td {
+            padding: 10px 14px;
+            font-size: 13px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper table thead tr th,
+        .cyber-post-wrapper table tbody tr td {
+            padding: 8px 10px;
+            font-size: 12px;
+        }
+        .cyber-post-wrapper table {
+            font-size: 12px;
+        }
+    }
+    
+    /* ===== HORIZONTAL RULE ===== */
+    .cyber-post-wrapper hr {
+        border: none;
+        border-top: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 30px 0 32px;
+        background: transparent;
+        height: 1px;
+    }
+    
+    /* ===== SHARE SECTION ===== */
+    .share-section {
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(0, 255, 136, 0.08);
+    }
+    
+    .share-section p {
+        color: #6a7290 !important;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 16px !important;
+    }
+    
+    .share-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .share-buttons a {
+        padding: 12px 28px;
+        border: 1px solid rgba(0, 255, 136, 0.12);
+        border-radius: 10px;
+        color: #b0b8c8 !important;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+        background: transparent;
+    }
+    
+    .share-buttons a:hover {
+        border-color: #00ff88;
+        color: #00ff88 !important;
+        background: rgba(0, 255, 136, 0.04);
+        transform: translateY(-2px);
+    }
+    
+    @media (max-width: 480px) {
+        .share-buttons a {
+            padding: 10px 18px;
+            font-size: 13px;
+        }
+        .share-section {
+            margin-top: 35px;
+            padding-top: 22px;
+        }
+    }
+    
+    /* ===== BOOK HIGHLIGHT BOX ===== */
+    .book-highlight {
+        background: linear-gradient(135deg, rgba(0, 255, 136, 0.05), rgba(0, 217, 255, 0.05));
+        border: 1px solid rgba(0, 255, 136, 0.1);
+        border-radius: 14px;
+        padding: 24px 30px;
+        margin: 20px 0 25px;
+        text-align: center;
+    }
+    
+    .book-highlight p {
+        margin: 5px 0 !important;
+        font-size: 16px;
+    }
+    
+    .book-highlight .highlight-title {
+        color: #00ff88;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    @media (max-width: 480px) {
+        .book-highlight {
+            padding: 18px 16px;
+        }
+        .book-highlight p {
+            font-size: 14px;
+        }
+        .book-highlight .highlight-title {
+            font-size: 16px;
+        }
+    }
+    
+    /* ===== DIRB POWER BOX ===== */
+    .dirb-power-box {
+        background: rgba(0, 255, 136, 0.03);
+        border: 1px solid rgba(0, 255, 136, 0.1);
+        border-radius: 14px;
+        padding: 20px 28px;
+        margin: 20px 0 25px;
+        text-align: center;
+    }
+    
+    .dirb-power-box .big-text {
+        color: #00ff88;
+        font-weight: 900;
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-family: 'Courier New', monospace;
+    }
+    
+    .dirb-power-box p {
+        margin: 5px 0 !important;
+        font-size: 15px;
+    }
+    
+    @media (max-width: 480px) {
+        .dirb-power-box {
+            padding: 16px 16px;
+        }
+        .dirb-power-box .big-text {
+            font-size: 17px;
+        }
+        .dirb-power-box p {
+            font-size: 14px;
+        }
+    }
+    
+    /* ===== WARNING BOX ===== */
+    .warning-box {
+        background: rgba(255, 107, 107, 0.05);
+        border-left: 4px solid #ff6b6b;
+        padding: 16px 22px;
+        margin: 16px 0 22px;
+        border-radius: 0 10px 10px 0;
+    }
+    
+    .warning-box p {
+        color: #ff6b6b !important;
+        font-size: 15px;
+        margin: 0 !important;
+    }
+    
+    @media (max-width: 480px) {
+        .warning-box {
+            padding: 14px 16px;
+        }
+        .warning-box p {
+            font-size: 13.5px;
+        }
+    }
+    
+    /* ===== BLOGGER OVERRIDES ===== */
+    .blog-posts {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    .post-body {
+        padding: 0 !important;
+        background: #000000 !important;
+    }
+    
+    .post-body-content {
+        background: #000000 !important;
+        padding: 0 !important;
+    }
+    
+    .post-outer {
+        background: #000000 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .post {
+        background: #000000 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    /* ===== INLINE CODE ===== */
+    .cyber-post-wrapper code:not(pre code) {
+        background: #0a0a0a;
+        padding: 2px 12px;
+        border-radius: 4px;
+        color: #00ff88;
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        font-size: 14.5px;
+        font-family: 'Courier New', monospace;
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper code:not(pre code) {
+            font-size: 13px;
+            padding: 1px 8px;
+        }
+    }
+    
+    /* ===== IMAGES ===== */
+    .cyber-post-wrapper img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin: 10px 0;
+        border: 1px solid rgba(0, 255, 136, 0.05);
+    }
+    
+    .separator {
+        clear: both;
+        text-align: center;
+    }
+    
+    /* ===== LINK STYLES ===== */
+    .cyber-post-wrapper a {
+        color: #00ff88;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .cyber-post-wrapper a:hover {
+        color: #00d9ff;
+        text-decoration: underline;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .mt-10 {
+        margin-top: 10px;
+    }
+</style>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="cyber-post-wrapper">
+
+    <div class="cyber-content">
+
+        <!-- ===== POST HEADER ===== -->
+        <div class="post-header-cyber">
+            <div class="post-badge">🌐 Web Content Discovery</div>
+            <h1 class="post-title-cyber">Dirb - <strong>Web Content Scanner</strong></h1>
+        </div>
+
+        <!-- ===== INTRODUCTION ===== -->
+        <p>
+            Dirb is a widely-used open-source web content scanner designed to discover existing—and often hidden—directories and files on web servers. Its primary purpose is professional web application auditing and security testing, helping penetration testers and security researchers map out a website's structure to identify potential entry points, such as administrative panels, backup files, or configuration files that aren't publicly linked.
+        </p>
+
+        <!-- ===== DIRB POWER BOX ===== -->
+        <div class="dirb-power-box">
+            <p class="big-text">$ dirb http://target.com /wordlist.txt</p>
+            <p style="color:#b0b8c8;">
+                <strong style="color:#00ff88;">Discover the Hidden</strong> — Uncover hidden directories and files with dictionary-based scanning!
+            </p>
+        </div>
+
+        <!-- ===== FEATURED IMAGES WITH AMAZON LINK ===== -->
+        <div class="featured-box">
+            <div class="featured-image">
+                <a href="https://www.amazon.com/dp/B0H6ZQV96V" target="_blank" rel="noopener">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpngVYzf-fiJeabOdjGa2dbMjdFz84CMZtEYde8-oHItQcsX3mlS6FhmsFEn4kJDTgsi_HDwbMxQHLPW7qG576hMYVyhO4K0rI0ONavzzASN8qafzccgt1WFEBGwGoYUTEJNcIgP6LlPtCGFb_2GM3gzWWhyG7oa9uKkn-6zQHx5ZKbANN5H4QuT9IldmS/s320/Dirb_book_mage.png" 
+                         alt="Dirb Web Content Scanner Book"/>
+                </a>
+                
+            </div>
+            <div class="featured-cta">
+                <p>📚 <strong style="color:#00ff88;">Get Your Copy Today!</strong></p>
+                <a class="main-link" href="https://www.amazon.com/dp/B0H6ZQV96V" target="_blank" rel="noopener">
+                    🛒 Buy Now on Amazon
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- ===== HOW IT WORKS ===== -->
+        <h2 id="how">⚙️ How It Works</h2>
+        <p>
+            The tool operates on a simple but effective principle: a <strong>dictionary-based attack</strong>. It works by launching a dictionary attack against a web server and analyzing the responses. Essentially, dirb sends HTTP requests to the server for a list of common paths (e.g., <code>/admin</code>, <code>/backup</code>, <code>/config.php</code>) from a wordlist file. By examining the HTTP status codes in the server's responses, it determines whether a resource exists.
+        </p>
+        <ul>
+            <li><strong style="color:#00ff88;">200 OK</strong> — The directory or file exists and is accessible.</li>
+            <li><strong style="color:#ffcc00;">403 Forbidden</strong> — The resource exists but access is restricted.</li>
+            <li><strong style="color:#6a7290;">404 Not Found</strong> — The resource does not exist.</li>
+        </ul>
+
+        <!-- ===== WARNING ===== -->
+        <div class="warning-box">
+            <p>⚠️ It is a staple tool in penetration testing distributions like Kali Linux, where it is usually pre-installed. While incredibly useful, it's crucial to use dirb only on targets you have <strong>explicit authorization</strong> to test, as unauthorized scanning can be illegal.</p>
+        </div>
+
+        <hr/>
+
+        <!-- ===== KEY FEATURES ===== -->
+        <h2 id="features">🔧 Key Features and Options</h2>
+        <p>
+            Dirb offers several command-line options to customize and refine scanning to fit different scenarios.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Option</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>-X</td>
+                    <td>-X .php,.bak</td>
+                    <td>Appends specified file extensions to each wordlist entry to find specific file types</td>
+                </tr>
+                <tr>
+                    <td>-x</td>
+                    <td>-x admin_</td>
+                    <td>Prepends a prefix to each wordlist entry</td>
+                </tr>
+                <tr>
+                    <td>-o</td>
+                    <td>-o results.txt</td>
+                    <td>Saves the scan output to a file for later analysis</td>
+                </tr>
+                <tr>
+                    <td>-r</td>
+                    <td>-r</td>
+                    <td>Disables recursive scanning, preventing it from scanning within discovered directories</td>
+                </tr>
+                <tr>
+                    <td>-c</td>
+                    <td>-c "PHPSESSID=abc123"</td>
+                    <td>Sets a specific cookie for the HTTP request, useful for scanning authenticated areas</td>
+                </tr>
+                <tr>
+                    <td>-u</td>
+                    <td>-u admin:password</td>
+                    <td>Provides credentials for Basic HTTP Authentication</td>
+                </tr>
+                <tr>
+                    <td>-H</td>
+                    <td>-H "User-Agent: MyAgent"</td>
+                    <td>Adds a custom header to the requests, which can help bypass security filters</td>
+                </tr>
+                <tr>
+                    <td>-p</td>
+                    <td>-p 127.0.0.1:8080</td>
+                    <td>Routes traffic through a proxy, useful for hiding your IP or debugging with tools like Burp Suite</td>
+                </tr>
+                <tr>
+                    <td>-N</td>
+                    <td>-N 404</td>
+                    <td>Ignores responses with a specific HTTP status code to filter out noise</td>
+                </tr>
+                <tr>
+                    <td>-z</td>
+                    <td>-z 100</td>
+                    <td>Adds a delay (in milliseconds) between requests to slow down the scan and avoid overwhelming the server</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr/>
+
+        <!-- ===== PRACTICAL EXAMPLE ===== -->
+        <h2 id="example">💻 Practical Example</h2>
+        <p>
+            The most common usage involves scanning a target with a specified wordlist:
+        </p>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>Basic Scan</span>
+            </div>
+            <pre><code><span class="cmd">dirb</span> <span class="target">http://testphp.vulnweb.com</span> <span class="flag">/usr/share/wordlists/dirb/common.txt</span></code></pre>
+        </div>
+        <p style="color:#6a7290;font-size:14px;margin-top:-10px;">
+            This command uses the default common wordlist to scan the publicly available <code>testphp.vulnweb.com</code> website.
+        </p>
+
+        <p><strong style="color:#00ff88;">A successful scan might produce output like:</strong></p>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>📄 Output</span>
+                <span>Scan Results</span>
+            </div>
+            <pre><code><span class="output">+ http://testphp.vulnweb.com/admin/ (CODE:200|SIZE:1580)</span>
+<span class="output">+ http://testphp.vulnweb.com/config/ (CODE:200|SIZE:512)</span>
+<span class="output">==&gt; DIRECTORY: http://testphp.vulnweb.com/docs/</span></code></pre>
+        </div>
+        <p style="color:#6a7290;font-size:14px;margin-top:-10px;">
+            This output reveals that the <code>/admin</code> and <code>/config</code> directories exist (indicated by a <code>200 OK</code> status) and that <code>/docs</code> is a directory, which Dirb will proceed to scan recursively if not stopped.
+        </p>
+
+        <p><strong style="color:#ffcc00;">To scan for files with a specific extension, use the <code>-X</code> flag:</strong></p>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>Extension Filtering</span>
+            </div>
+            <pre><code><span class="cmd">dirb</span> <span class="target">https://example.com</span> <span class="flag">-X .php</span></code></pre>
+        </div>
+        <p style="color:#6a7290;font-size:14px;margin-top:-10px;">
+            This command would only check for files ending in <code>.php</code>, making the scan faster and more targeted.
+        </p>
+
+        <div class="featured-box" style="padding:20px 24px;margin:20px 0;">
+            <div class="featured-image" style="flex-shrink:0;">
+                <a href="https://www.amazon.com/dp/B0H6ZQV96V" target="_blank" rel="noopener">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEholdJk4JqOldU3ork_mXU8GCFpkRNWyyy6rzf-c-fRRdqaSsaE1rbor5eOnCLpPE7UjdiMYYbq4pR9iZy2dCVnibqilspHHuppgeTXKF6YsuuXnzRUy5ZQk9qVBimehOYCMyWMExYoUAB_ZiZw1VIe-eKfhkv5p99bISYqkdGyPhKNw9VJvTbA4GkD4vA-/s320/Dirb_book_mage.png" 
+                         alt="Dirb Book" style="max-width:120px;border-radius:10px;"/>
+                </a>
+            </div>
+            <div class="featured-cta" style="flex:1;text-align:center;">
+                <p style="color:#b0b8c8;font-size:14px;margin:0 !important;">
+                    📚 <strong style="color:#ffcc00;">For Advanced Skills</strong>
+                </p>
+                <a class="main-link" href="https://www.amazon.com/dp/B0H6ZQV96V" target="_blank" rel="noopener" 
+                   style="display:inline-block;padding:10px 30px;background:linear-gradient(135deg,#ffcc00,#ff9900);color:#000000 !important;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;transition:all 0.3s ease;margin-top:6px;">
+                    🛒 Download This Book
+                </a>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- ===== CONCLUSION ===== -->
+        <h2 id="conclusion">🎯 Conclusion</h2>
+        <p>
+            Dirb is a foundational tool for web application security testing. Its simplicity, combined with its efficient dictionary-based scanning, makes it an indispensable part of any security professional's toolkit for the crucial early stage of information gathering and reconnaissance.
+        </p>
+
+        <!-- ===== BOOK HIGHLIGHT ===== -->
+        <div class="book-highlight">
+            <p class="highlight-title">⭐ From Dirb Beginner to Web Recon Pro</p>
+            <p style="color:#b0b8c8;">
+                Master the art of web content discovery and directory enumeration with one of the most trusted web scanners!
+            </p>
+        </div>
+
+        <!-- ===== FINAL CTA ===== -->
+        <div class="book-highlight" style="border-color:#ffcc00;background:linear-gradient(135deg,rgba(255,204,0,0.05),rgba(0,255,136,0.05));">
+            <p class="highlight-title" style="color:#ffcc00;">🌐 Ready to Master Web Content Discovery?</p>
+            <p style="color:#b0b8c8;font-size:16px;">
+                Start your web application reconnaissance journey with the industry standard content scanner.
+            </p>
+            <br/>
+            <a class="main-link" href="https://www.amazon.com/dp/B0H6ZQV96V" target="_blank" rel="noopener" 
+               style="display:inline-block;padding:15px 42px;background:linear-gradient(135deg,#ffcc00,#ff9900);color:#000000 !important;border-radius:10px;font-weight:700;font-size:16px;text-decoration:none;transition:all 0.3s ease;letter-spacing:0.5px;">
+                🛒 Buy Now on Amazon
+            </a>
+            <p class="small-note" style="color:#6a7290 !important;font-size:13px;margin-top:12px;">
+                Start your Dirb journey today — Get your copy now!
+            </p>
+        </div>
+
+        <hr/>
+
+        <!-- ===== SHARE SECTION ===== -->
+        <div class="share-section">
+            <p>📤 Share this book recommendation with your network</p>
+            <div class="share-buttons">
+                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Dirb%20-%20Web%20Content%20Scanner%20-%20Discover%20hidden%20directories%20and%20files%20with%20dictionary-based%20scanning!%20%23Dirb%20%23CyberSecurity%20%23WebSecurity%20%23KaliLinux','_blank');return false;">
+                    🐦 Twitter
+                </a>
+                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    📘 Facebook
+                </a>
+                <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
